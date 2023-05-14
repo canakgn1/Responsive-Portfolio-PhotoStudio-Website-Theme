@@ -1,0 +1,551 @@
+/*---IMPORT GOOGLE FONTS--*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap');
+
+/*===================RESET CSS======================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    transition: .3s;
+    scroll-behavior: smooth;
+}
+
+/*=================ROOT COLOR and SİZE======================*/
+:root{
+    --special-color:  rgb(164, 0, 230);
+    --special-color-shadow: rgba(164, 0, 230, 0.2);
+    
+    --background: #fff;
+    --h-color:#0f0f0f;
+    --p-color: #444444;
+
+    --title-size: 52px;
+    --subtitle-size: 22px;
+    --p-size: 20px;
+
+}
+
+/*========================GENERAL TAGS STYLE============================*/
+section{
+    padding: 100px 50px;
+    text-align: center;
+    background-color: var(--background);
+}
+
+.title{
+    font-size: var(--title-size);
+    color: var(--special-color);
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-shadow: 10px 10px 1px var(--special-color-shadow);
+    margin-bottom: 50px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*========================HEADER STYLING===========================*/
+
+#header{
+    width: 100%;
+    min-height: 100vh;    
+    background: linear-gradient(79deg, var(--special-color-shadow) 0%, var(--special-color-shadow) 100%),url(images/header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*=================NAVBAR STYLING==============*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container{
+    height: 80px;
+    width: 100%;
+    padding: 0 50px;
+    background-color: var(--background);
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+}
+
+.navbar__logo{
+    font-size: var(--title-size);
+    color: var(--h-color);
+    font-weight: 900;
+}
+
+.fa-solid.fa-bars{
+    display: none;
+}
+
+.navbar__links,
+.navbar__links li{
+    height: 100%;
+}
+
+.navbar__item{
+    height: 100%;
+    padding: 0 30px;
+    color: var(--h-color);
+    font-size: var(--subtitle-size);
+    transition: .3s;
+}
+
+.navbar__item:hover{
+    color: var(--special-color);
+}
+
+/*===============COLOR BOX STYLE=================*/
+.color__box{
+    position: fixed;
+    flex-direction: column;
+    bottom: 50%;
+    right: 10px;
+    transform: translateY(50%);
+    background-color: var(--background);
+    box-shadow: 1px 1px 8px -4px var(--h-color);
+    border-radius: 30px;
+    z-index: 999;
+}
+
+.color__box i{
+    padding: 10px 10px;
+    font-size: var(--subtitle-size);
+    transition: .3s;
+}
+
+.color__box i:hover{
+    opacity: 0.7;
+}
+
+.content__box{
+    border: 1px solid #fff;
+    padding: 40px;
+}
+
+.header__content{
+    font-size: var(--title-size);
+    color: #faf7f7;
+    font-weight: 300;
+}
+
+/*======================ABOUT SECTİON STYLING=======================*/
+
+.about__content{
+    color: var(--p-color);
+    font-size: var(--p-size);
+    text-align: justify;
+    column-count: 3;
+    column-gap: 100px;
+    column-rule: solid 1px var(--special-color);
+    margin-bottom: 200px;
+}
+
+/*============Expreince style============*/
+.about__exp{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.experience__container{
+    position: relative;
+    border-left: 5px solid var(--special-color);
+    padding-left: 30px;
+}
+
+.experience__content{
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.experience__content::before{
+    content: ' ';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--special-color);
+    left: -13px;
+}
+
+.experience__content h2{
+    color: var(--h-color);
+    font-size: var(--title-size);
+    font-weight: 300;
+}
+
+.experience__content p{
+    font-size: var(--p-size);
+    color: var(--p-color);
+}
+
+/*==============Skills Style================*/
+.skills__content{
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.skills__content p{
+    color: var(--h-color);
+    font-size: var(--subtitle-size);
+    margin-bottom: 10px;
+}
+
+.skillsbar{
+    width: 600px;
+    height: 8px;
+    background-color: var(--p-color);
+}
+
+.skillsbar__inner{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background-color: var(--special-color);
+}
+
+/*===================PORTFOLİO SECTİON STYLE=======================*/
+
+.portfolio__links{
+    padding: 10px 20px;
+    font-size: var(--subtitle-size);
+    color: var(--h-color);
+    transition: .3s;
+}
+
+.portfolio__links:hover{
+    color: var(--special-color);
+}
+
+.portfolio__links:active{
+    color: aquamarine;
+}
+
+.portfolio__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio__boxs{
+    position: relative;
+    margin: 30px;
+    transition: .3s;
+    height: 600px;
+}
+
+.portfolio__boxs.hide{
+    display: none;
+}
+
+.portfolio__boxs p{
+    font-size: var(--title-size);
+    color: #faf7f7;
+    font-weight: 300;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .3s;
+}
+
+.portfolio__boxs:hover .label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--special-color-shadow);
+    transition: .3s;
+}
+
+.portfolio__boxs:hover p{
+    opacity: 1;
+    top: 50%;
+}
+
+/*=======================REVİEWS SECTİON STYLE=============================*/
+
+.reviews__box{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 10px var(--h-color);
+    padding: 50px;
+}
+
+.profile__photo{
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid var(--special-color);
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.profile__name{
+    font-size: var(--title-size);
+    color: var(--h-color);
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.profile__comment{
+    font-size: var(--p-size);
+    color: var(--p-color);
+    padding: 0 100px;
+}
+
+.arrow{
+    position: absolute;
+    font-size: 150px;
+    color: var(--p-color);
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.arrow:hover{
+    color: var(--special-color);
+}
+
+.arrow:active{
+    color: var(--p-color);
+}
+
+.left-arrow{
+    left: 20px;
+}
+
+.right-arrow{
+    right: 20px;
+}
+
+.profile__stars{
+    margin-bottom: 30px;
+}
+
+.profile__stars i{
+    font-size: var(--subtitle-size);
+}
+
+.profile__stars i.active{
+    color: rgb(255, 255, 104);
+}
+
+/*========================CONTACT SECTİON STYLE==========================*/
+
+.contact__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact__photo{
+    max-height: 700px;
+    margin-left: 150px;
+}
+
+.contact__form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding-left: 50px;
+}
+
+.form__element{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.form__element label{
+    color: var(--h-color);
+    font-size: var(--title-size);
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contact__form input,
+.contact__form textarea{
+    max-width: 400px;
+    background-color: var(--background);
+    border-bottom: 2px solid var(--h-color);
+    font-size: var(--subtitle-size);
+    color: var(--p-color);
+}
+
+.form__btn{
+    padding: 10px 20px;
+    background-color: var(--background);
+    border: 2px solid var(--h-color);
+    border-radius: 4px;
+    color: var(--h-color);
+    letter-spacing: 4px;
+    font-size: var(--subtitle-size);
+    transition: .3s;
+}
+
+.form__btn:hover{
+    border-color: var(--special-color);
+}
+
+/*====================SCROLL=====================*/
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: var(--special-color) var(--background);
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--special-color);
+    border-radius: 8px;
+    border: 4px solid var(--background);
+}
+
+/*==========================RESPONSİVE DESİGN==============================*/
+
+@media screen and (max-width:1024px){
+
+    :root{
+        --title-size : 44px;
+    }
+
+    section{
+        padding: 100px 20px;
+    }
+
+    .navbar__links{
+        position: absolute;
+        display: block;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+    }
+
+    .navbar__item{
+        background-color: var(--background);
+        border-bottom: 1px solid var(--h-color);
+    }
+
+    .fa-solid.fa-bars{
+        display: block;
+        font-size: var(--title-size);
+    }
+
+    .header__content{
+        font-size: var(--subtitle-size);
+    }
+
+    .about__content{
+        column-count: 1;
+        margin-bottom: 100px;
+    }
+
+    .about__content p{
+        margin-bottom: 10px;
+    }
+
+    .about__exp{
+        grid-template-columns: 1fr;
+    }
+
+    .experience__container{
+        margin-bottom: 100px;
+    }
+
+    .skillsbar{
+        width: 400px;
+    }
+
+    .portfolio__container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .portfolio__boxs{
+        height: 400px;
+    }
+    
+    .profile__comment{
+        padding: 0;
+    }
+
+    .arrow{
+        font-size: 80px;
+    }
+
+    .contact__container{
+        grid-template-columns: 1fr;
+    }
+    
+    .contact__photo{
+        display: none;
+    }
+
+    .contact__form{
+        align-items: center;
+        padding: 0;
+    }
+
+    .form__element{
+        margin-bottom: 20px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:620px){
+    :root{
+        --title-size : 36px;
+    }
+
+    .portfolio__container{
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio__menu{
+        flex-direction: column;
+    }
+
+    .portfolio__boxs{
+        height: 300px;
+    }
+
+    .skillsbar{
+        width: 200px;
+    }
+
+    .reviews__box{
+        width: 100%;
+        padding: 10px;
+    }
+}

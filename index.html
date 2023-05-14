@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--CSS FİLE ADD-->
+        <link rel="stylesheet" href="style.css">
+        <title>PhotoStudio</title>
+    </head>
+    <body>
+        <!--==========================HEADER SECTİON========================-->
+
+        <header class="flex" id ='header'>
+            <!--============NAVBAR===============-->
+            <nav class="navbar">
+                <div class="navbar__container flex">
+                    <a href="#header" class="navbar__logo">PhotoStudio</a>
+                    <i class="fa-solid fa-bars"></i>
+                    <ul class="navbar__links flex">
+                        <li><a href="#header" class="navbar__item flex">Home</a></li>
+                        <li><a href="#about" class="navbar__item flex">About</a></li>
+                        <li><a href="#portfolio" class="navbar__item flex">Portfolio</a></li>
+                        <li><a href="#reviews" class="navbar__item flex">Reviews</a></li>
+                        <li><a href="#contact" class="navbar__item flex">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!--Color Change and Dark Mode Box-->
+            <div class="color__box flex">
+                <i class="fa-solid fa-circle-half-stroke dark-mode"></i>
+                <i class="fa-solid fa-circle" style="color:#ff1d58"></i>
+                <i class="fa-solid fa-circle" style="color:#27E1C1"></i>
+                <i class="fa-solid fa-circle" style="color:#FF597B"></i>
+                <i class="fa-solid fa-circle" style="color:#ffff4e"></i>
+                <i class="fa-solid fa-circle" style="color:#A400E6"></i>
+            </div>
+
+            <div class="content__box">
+                <h1 class="header__content">
+                    Photography <br> Illustration <br> Beauty <br> and <br> Professionalism
+                </h1>
+            </div>
+        </header>
+
+        <!--======================ABOUT SECTİON=============================-->
+
+        <section id="about">
+            <h1 class="about__title title">About Us</h1>
+            <div class="about__content">
+                <p class="vision">
+                    <h2>Vision</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsum consectetur rem tenetur incidunt quisquam unde distinctio. Est, ea repellat pariatur commodi, odit, corporis saepe cupiditate repudiandae inventore facilis dignissimos.
+                </p>
+                <p class="mission">
+                    <h2>Mission</h2> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsum consectetur rem tenetur incidunt quisquam unde distinctio. Est, ea repellat pariatur commodi, odit, corporis saepe cupiditate repudiandae inventore facilis dignissimos.
+                </p>
+                <p class="we">
+                    <h2>We</h2> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsum consectetur rem tenetur incidunt quisquam unde distinctio. Est, ea repellat pariatur commodi, odit, corporis saepe cupiditate repudiandae inventore facilis dignissimos.
+                </p>
+            </div>
+            <div class="about__exp">
+                <div class="experience">
+                    <h1 class="experience__title title">Experience</h1>
+                    <div class="experience__container">
+                        <div class="experience__content">
+                            <h2>Street Photography</h2>
+                            <p>2017-2018</p>
+                        </div>
+                        <div class="experience__content">
+                            <h2>Studio Work</h2>
+                            <p>2018-2020</p>
+                        </div>
+                        <div class="experience__content">
+                            <h2>Brand Model</h2>
+                            <p>2020-Now</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h1 class="skills__title title">Skills</h1>
+                    <div class="skills__container">
+                        <div class="skills__content flex">
+                            <p>
+                                Model Photography - <span class="bar-fill">92%</span>
+                            </p>
+                            <div class="skillsbar">
+                                <div class="skillsbar__inner"></div>
+                            </div>
+                        </div>
+                        <div class="skills__content flex">
+                            <p>
+                                Illustration - <span class="bar-fill">80%</span>
+                            </p>
+                            <div class="skillsbar">
+                                <div class="skillsbar__inner"></div>
+                            </div>
+                        </div>
+                        <div class="skills__content flex">
+                            <p>
+                                Nature and Street Photography - <span class="bar-fill">76%</span>
+                            </p>
+                            <div class="skillsbar">
+                                <div class="skillsbar__inner"></div>
+                            </div>
+                        </div>
+                        <div class="skills__content flex">
+                            <p>
+                                Studio Photography - <span class="bar-fill">70%</span>
+                            </p>
+                            <div class="skillsbar">
+                                <div class="skillsbar__inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=====================PORTFOLİO SECTİON===========================-->
+
+        <section id="portfolio">
+            <h1 class="portfolio__title title">Portfolio</h1>
+            <ul class="portfolio__menu flex">
+                <li class="portfolio__links active" data-filter="all">All</li>
+                <li class="portfolio__links" data-filter="nature">Nature</li>
+                <li class="portfolio__links" data-filter="portrait">Portrait</li>
+                <li class="portfolio__links" data-filter="illustration">Illustration</li>
+            </ul>
+            <div class="portfolio__container">
+                <div class="portfolio__boxs" data-item="nature">
+                    <p>Nature</p>
+                    <img src="images/portfolio5.jpg" alt="">
+                    <div class="label"></div>
+                </div>
+                <div class="portfolio__boxs" data-item="portrait">
+                    <p>Portrait</p>
+                    <img src="images/portfolio2.jpg" alt="">
+                    <div class="label"></div>
+                </div>
+                <div class="portfolio__boxs" data-item="nature">
+                    <p>Nature</p>
+                    <img src="images/portfolio3.jpg" alt="">
+                    <div class="label"></div>
+                </div>
+                <div class="portfolio__boxs" data-item="illustration">
+                    <p>Illustration</p>
+                    <img src="images/portfolio6.jpg" alt="">
+                    <div class="label"></div>
+                </div>
+                <div class="portfolio__boxs" data-item="portrait">
+                    <p>Portrait</p>
+                    <img src="images/portfolio1.jpg" alt="">
+                    <div class="label"></div>
+                </div>
+                <div class="portfolio__boxs" data-item="nature">
+                    <p>Nature</p>
+                    <img src="images/portfolio4.jpg" alt="">
+                    <div class="label"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--======================REVİEWS SECTİON============================-->
+
+        <section id="reviews">
+            <h1 class="reviews__title title">Reviews</h1>
+            <div class="reviews__box">
+                <p class="arrow left-arrow"><</p>
+                <p class="arrow right-arrow">></p>
+                <div class="profile__photo">
+                    <img class="photoaq" src="images/review1.jpg">
+                </div>
+                <h2 class="profile__name">Emalia Clarke</h2>
+                <div class="profile__stars">
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="profile__comment">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at arcu non libero gravida porta. Mauris ut arcu mi. Nullam scelerisque eu neque non tincidunt. Sed iaculis arcu at condimentum suscipit. Nullam tempus bibendum tempus. In tincidunt consectetur feugiat. Aliquam
+                </p>
+            </div>
+        </section>
+
+        <!--======================CONTACT SECTİON==========================-->
+
+        <section class="Contact" id="contact">
+            <h1 class="contact__title title">Contact Us</h1>
+            <div class="contact__container">
+                <div class="contact__photo">
+                    <img src="images/portfolio1.jpg">
+                </div>
+                <div class="contact__form">
+                    <div class="form__element">
+                        <label for="name">Name</label>
+                        <input type="text" name="" id="name" placeholder="Your name here">
+                    </div>
+                    <div class="form__element">
+                        <label for="username">Username</label>
+                        <input type="text" name="" id="username" placeholder="Your username here">
+                    </div>
+                    <div class="form__element">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="" id="email" placeholder="Your Email here">
+                    </div>
+                    <div class="form__element">
+                        <label for="message">Message</label>
+                        <textarea rows="4" placeholder="Your message here"></textarea>
+                    </div>
+                    <div class="form__element">
+                        <input class="form__btn" type="button" value="Send">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="script.js">
+        </script>
+        <script src="https://kit.fontawesome.com/39a40ad80d.js" crossorigin="anonymous"></script>
+    </body>
+</html>
